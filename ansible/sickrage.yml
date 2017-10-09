@@ -21,4 +21,4 @@
         volumes:
           - /docker/sickrage:/config
           - /data/media:/download
-          - /data/media/tv:/tv
+          - /data/media/TV:/tv
