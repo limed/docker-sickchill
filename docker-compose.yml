@@ -1,0 +1,8 @@
+version '2'
+services:
+  sickrage:
+    container_name: sickrage
+    image: linuxserver/sickrage
+    restart: unless-stopped
+    ports:
+      - 127.0.0.1:8081:8081/tcp
