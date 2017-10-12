@@ -1,4 +1,4 @@
-version '2'
+version '3'
 services:
   sickrage:
     container_name: sickrage
@@ -6,3 +6,10 @@ services:
     restart: unless-stopped
     ports:
       - 127.0.0.1:8081:8081/tcp
+    environment:
+      - TZ="America/Los_Angeles"
+    labels:
+      - "container_name=sickrage"
+    volumes:
+      - "/data/media/TV:/tv"
+      - "/data/media:/downloads"
