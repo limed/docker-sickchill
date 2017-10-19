@@ -11,7 +11,7 @@ docker run -d \
         -e PUID=$(id -u) \
         -v /docker/sickrage:/config \
         -v /data/media:/download \
-        -v /data/media/tv:/tv \
+        -v /data/media/TV:/tv \
         --restart always \
         --name sickrage \
         linuxserver/sickrage
