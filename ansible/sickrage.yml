@@ -32,6 +32,6 @@
           - /data/media:/download
           - /data/media/TV:/tv
         env:
-          - TZ="America/Los_Angeles"
-          - PGID="{{ gid.stdout }}"
-          - PUID="{{ uid.stdout }}"
+          TZ: "America/Los_Angeles"
+          PGID: "{{ gid.stdout }}"
+          PUID: "{{ uid.stdout }}"
