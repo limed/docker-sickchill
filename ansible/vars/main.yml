@@ -1,4 +1,9 @@
 ---
-container_name: sickrage
-image_name: linuxserver/sickrage
+container_name: sickchill
+image_name: linuxserver/sickchill
 container_state: started
+
+volumes:
+  - /docker/sickrage:/config
+  - /media:/downloads
+  - /media/TV:/tv
